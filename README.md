@@ -1,4 +1,4 @@
-# drl_planner
+# SAGE: Sample-efficient Autonomous Graph-based navigation with Experience transfer
 Offical code of journal paper titled [*Sample-efficient learning-based dynamic environment navigation with transferring experience from optimization-based planner*](https://doi.org/10.1109/lra.2024.3412610), which has been published on IEEE Robotics and Automation Letter.
 
 ## Abstract 
