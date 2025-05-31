@@ -1,6 +1,9 @@
 import copy
 from typing import Any, Dict, List, Optional, Tuple, Type, Union
 
+import os
+os.environ['CUBLAS_WORKSPACE_CONFIG']=':16:8'       
+
 import dgl
 import gym
 import numpy as np
