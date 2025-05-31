@@ -3,7 +3,6 @@ import rvo2
 from crowd_sim.envs.policy.policy import Policy
 from crowd_sim.envs.utils.action import ActionXY, ActionRot
 from crowd_sim.envs.utils.state import ObservableState, JointState_2tyeps, JointState
-from crowd_nav.utils.a_star import Astar
 from crowd_sim.envs.policy.subtarget import subtarget
 
 def rotate_2d_point(theta, point):
@@ -85,7 +84,6 @@ class ORCA(Policy):
         self.rotation_samples = 16
         self.sampling = None
         self.rotation_constraint = None
-        self.astarplanner = Astar()
         self.target_pos = None
 
     def configure(self, config, device='cpu'):
