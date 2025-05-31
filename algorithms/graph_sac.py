@@ -599,6 +599,8 @@ class GraphSAC(BaseAlgorithm):
         return self
 
     def predict(self, observation: dgl.DGLHeteroGraph, deterministic: bool = False) -> np.ndarray:
+        if isinstance(observation, JointState):
+            observation = joint_state_as_graph(observation, device=self.device)
         return self.policy.predict(observation, deterministic)
 
     def _excluded_save_params(self) -> List[str]:
