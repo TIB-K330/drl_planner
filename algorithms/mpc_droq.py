@@ -14,7 +14,7 @@ from modules.policies import ActionNoise, GraphReplayBuffer, GraphReplayBufferSa
 from modules.save_util import load_from_pkl
 from modules.type_aliases import Schedule
 from modules.utils import polyak_update
-from graph_sac import GraphSAC
+from algorithms.graph_sac import GraphSAC
 
 
 class MpcDroQ(GraphSAC):
